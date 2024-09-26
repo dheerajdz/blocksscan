@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Body from './Components/Body';
+import Bofot from './Components/Bofot';
+import Cards from './Components/Cards';
+import Features from './Components/Features';
+import Feedback from './Components/Feedback';
+import Footer from './Components/Footer';
+import Partners from './Components/Partners';
+import Reviews from './Components/Reviews';
+import ServicesGrid from './Components/ServicesGrid';
+import Touch from './Components/Touch';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Navbar/> */}
+      <Body />
+      <Bofot/>
+      <Features/>
+      <Cards/>
+      <Reviews/>
+      <Feedback/>
+      <ServicesGrid/>
+      <Partners/>
+      <Touch/>
+      <Footer/>
     </div>
   );
 }
